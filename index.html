@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colour Palette Art & Language Institute | Frisco TX</title>
+    <meta name="description" content="Structured Art, Hindi, Sanskrit & Gujarati classes in Frisco, TX. Building creativity, confidence, and academic success with ISD credits.">
+    <meta name="keywords" content="art classes Frisco TX, Hindi classes, Sanskrit lessons, Gujarati classes, fine arts portfolio, ISD credits">
+    <link rel="canonical" href="https://colourpaletteart.com">
+    
+    <meta property="og:title" content="Colour Palette Art & Language Institute">
+    <meta property="og:description" content="Where Creativity Meets Culture & Credits. Expert-led programs for ages 5+.">
+    <meta property="og:image" content="https://placehold.co/1200x630/D96C2C/FFFFFF?text=Colour+Palette">
+    <meta property="og:type" content="website">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Colour Palette Art & Language Institute",
+      "description": "Premier art and language school for children in Frisco, Texas",
+      "address": {"@type": "PostalAddress", "addressLocality": "Frisco", "addressRegion": "TX", "addressCountry": "US"},
+      "telephone": "+1-469-955-2323",
+      "priceRange": "$$",
+      "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "847"}
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #D96C2C;
+            --primary-light: #FFF0E6;
+            --secondary: #1F2937;
+            --accent: #F59E0B;
+            --lang-theme: #9F1239;
+            --success: #059669;
+            --bg: #FDFBF7;
+            --white: #ffffff;
+            --radius-std: 16px;
+            --radius-lg: 32px;
+            --radius-arch: 200px 200px 20px 20px;
+            --shadow-sm: 0 4px 6px -1px rgba(0,0,0,0.05);
+            --shadow-lg: 0 20px 40px -5px rgba(217,108,44,0.15);
+            --ease: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Paper Texture */
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--secondary); line-height: 1.7; overflow-x: hidden; }
+        h1,h2,h3,h4 { font-family: 'Playfair Display', serif; }
+        a { text-decoration: none; color: inherit; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        .hidden { display: none; }
+        .fade-in { animation: fadeIn 0.5s var(--ease); }
+        .text-center { text-align: center; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes pulse { 0%,100% { box-shadow: 0 0 0 0 rgba(217,108,44,0.4); } 50% { box-shadow: 0 0 0 12px rgba(217,108,44,0); } }
+
+        /* Announcement */
+        .announcement {
+            background: linear-gradient(90deg, var(--secondary), #111827);
+            color: var(--white);
+            text-align: center;
+            padding: 10px 15px;
+            font-size: 0.85rem;
+        }
+        .announcement strong { color: var(--accent); }
+
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            background: rgba(253,251,247,0.92);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            padding: 14px 0;
+        }
+        .nav-wrapper { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
+        .logo { font-size: 1.4rem; font-weight: 800; color: var(--primary); display: flex; align-items: center; gap: 8px; }
+        .nav-pills { background: var(--white); padding: 5px; border-radius: 50px; box-shadow: var(--shadow-sm); display: flex; gap: 5px; border: 1px solid rgba(0,0,0,0.05); }
+        .nav-btn { background: none; border: none; padding: 10px 22px; border-radius: 40px; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 0.9rem; color: #666; cursor: pointer; transition: all 0.3s var(--ease); }
+        .nav-btn.active { background: var(--primary); color: var(--white); box-shadow: 0 4px 12px rgba(217,108,44,0.3); }
+        .cta-header { background: var(--secondary); color: var(--white); padding: 12px 26px; border-radius: 50px; font-weight: 600; transition: all 0.2s; animation: pulse 2s infinite; }
+        .cta-header:hover { transform: scale(1.05); background: #111827; }
+
+        /* Hero */
+        .hero { padding: 50px 0 70px; }
+        .hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 50px; align-items: center; }
+        .hero-badge { display: inline-flex; align-items: center; gap: 6px; background: #ecfdf5; color: var(--success); padding: 6px 14px; border-radius: 50px; font-size: 0.8rem; font-weight: 600; margin-bottom: 12px; }
+        .hero h1 { font-size: 3.2rem; line-height: 1.15; margin-bottom: 20px; }
+        .hero h1 i { font-style: italic; color: var(--primary); }
+        .hero-intro { font-size: 0.95rem; color: #555; background: #fff; padding: 15px; border-left: 4px solid var(--primary); border-radius: 4px; margin-bottom: 25px; box-shadow: var(--shadow-sm); }
+        .hero-stats { display: flex; gap: 28px; margin: 28px 0; padding: 20px 0; border-top: 1px solid rgba(0,0,0,0.06); border-bottom: 1px solid rgba(0,0,0,0.06); }
+        .stat-num { font-size: 1.8rem; font-weight: 700; color: var(--secondary); display: block; }
+        .stat-label { font-size: 0.75rem; color: #888; text-transform: uppercase; letter-spacing: 0.5px; }
+        .btn-primary { background: linear-gradient(135deg, var(--primary), #c45a1a); color: var(--white); padding: 15px 32px; border-radius: 50px; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s; border: none; cursor: pointer; font-size: 1rem; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(217,108,44,0.35); }
+        .btn-secondary { background: transparent; color: var(--secondary); padding: 15px 28px; border-radius: 50px; font-weight: 600; border: 2px solid var(--secondary); cursor: pointer; transition: all 0.3s; margin-left: 12px; }
+        .btn-secondary:hover { background: var(--secondary); color: var(--white); }
+        .hero-img-container { position: relative; }
+        .hero-img { width: 100%; height: 480px; object-fit: cover; border-radius: var(--radius-arch); box-shadow: var(--shadow-lg); position: relative; z-index: 1; }
+        .hero-deco { position: absolute; top: 15px; right: -15px; width: 140px; height: 140px; background: var(--accent); border-radius: 50%; z-index: 0; opacity: 0.15; }
+        .hero-testimonial { position: absolute; bottom: -30px; left: -20px; background: var(--white); padding: 16px 20px; border-radius: 16px; box-shadow: var(--shadow-lg); max-width: 280px; z-index: 2; }
+        .hero-testimonial p { font-size: 0.85rem; font-style: italic; color: #555; margin-bottom: 8px; }
+        .hero-testimonial strong { font-size: 0.8rem; color: var(--secondary); }
+        .stars { color: #facc15; }
+
+        /* Trust Bar */
+        .trust-bar { background: var(--secondary); color: var(--white); padding: 25px 0; }
+        .trust-items { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
+        .trust-item { display: flex; align-items: center; gap: 10px; font-size: 0.95rem; font-weight: 500; }
+        .trust-item span { color: var(--accent); font-weight: bold; }
+
+        /* Sections */
+        .section { padding: 70px 0; }
+        .section-header { text-align: center; max-width: 700px; margin: 0 auto 45px; }
+        .section-header h2 { font-size: 2.4rem; margin-bottom: 12px; }
+        .section-header p { color: #666; font-size: 1.05rem; }
+
+        /* Bento Grid */
+        .bento-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; }
+        .card { background: var(--white); padding: 30px; border-radius: var(--radius-lg); border: 1px solid rgba(0,0,0,0.04); box-shadow: var(--shadow-sm); transition: all 0.3s var(--ease); position: relative; overflow: hidden; height: 100%; }
+        .card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: rgba(217,108,44,0.15); }
+        .card-icon { width: 56px; height: 56px; background: var(--primary-light); color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; margin-bottom: 18px; }
+        .card h3 { margin-bottom: 10px; font-size: 1.25rem; }
+        .card p { font-size: 0.95rem; color: #666; }
+        .card-badge { position: absolute; top: 15px; right: 15px; background: var(--success); color: var(--white); padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; }
+
+        /* Testimonials */
+        .testimonials-section { background: linear-gradient(180deg, #fff 0%, var(--bg) 100%); padding: 70px 0; }
+        .testimonial-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+        .testimonial { background: var(--white); padding: 28px; border-radius: var(--radius-std); box-shadow: var(--shadow-sm); position: relative; border: 1px solid rgba(0,0,0,0.03); }
+        .testimonial::before { content: '"'; font-size: 4rem; color: var(--primary); opacity: 0.15; position: absolute; top: 5px; left: 18px; font-family: serif; line-height: 1; }
+        .testimonial-text { font-style: italic; color: #555; margin-bottom: 18px; position: relative; z-index: 1; font-size: 0.95rem; }
+        .testimonial-author { display: flex; align-items: center; gap: 12px; }
+        .author-avatar { width: 42px; height: 42px; background: linear-gradient(135deg, var(--primary), var(--accent)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: 600; font-size: 0.9rem; }
+        .author-info strong { display: block; font-size: 0.9rem; }
+        .author-info span { font-size: 0.75rem; color: #888; }
+
+        /* Language */
+        .lang-hero { background: linear-gradient(135deg, #fff5f7, #fce7f3); border-radius: var(--radius-lg); padding: 50px; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 30px; margin-bottom: 40px; }
+        .lang-tag { background: var(--lang-theme); color: var(--white); padding: 6px 14px; border-radius: 6px; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; }
+        .lang-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
+
+        /* Mentor */
+        .mentor-grid { display: grid; grid-template-columns: 1fr 1.8fr; gap: 50px; align-items: center; background: var(--white); padding: 45px; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); }
+        .mentor-img { width: 100%; height: 380px; object-fit: cover; border-radius: var(--radius-arch); box-shadow: var(--shadow-sm); }
+        .mentor-stats { display: flex; gap: 18px; margin-top: 28px; }
+        .mentor-stat { background: var(--bg); padding: 18px; border-radius: 12px; text-align: center; flex: 1; }
+        .mentor-stat strong { font-size: 1.6rem; color: var(--primary); display: block; font-family: 'Playfair Display', serif; }
+
+        /* Map Section */
+        .map-wrapper { width: 100%; max-width: 1000px; margin: 0 auto; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); border: 8px solid var(--white); height: 400px; }
+        .map-frame-styled { width: 100%; height: 100%; border: none; filter: grayscale(100%) invert(92%) contrast(85%); transition: filter 0.3s; }
+        .map-wrapper:hover .map-frame-styled { filter: none; }
+
+        /* FAQ */
+        .faq-grid { max-width: 750px; margin: 0 auto; }
+        .faq-item { background: var(--white); border-radius: 12px; margin-bottom: 12px; box-shadow: var(--shadow-sm); overflow: hidden; border: 1px solid rgba(0,0,0,0.04); }
+        .faq-q { padding: 20px 24px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; }
+        .faq-a { padding: 0 24px; max-height: 0; overflow: hidden; transition: all 0.3s; color: #666; }
+        .faq-item.open .faq-a { padding: 0 24px 20px; max-height: 200px; }
+        .faq-item.open .faq-icon { transform: rotate(45deg); }
+        .faq-icon { font-size: 1.4rem; color: var(--primary); transition: all 0.3s; }
+
+        /* CTA Section */
+        .cta-section { background: linear-gradient(135deg, var(--secondary), #111827); color: var(--white); padding: 70px 30px; border-radius: var(--radius-lg); text-align: center; position: relative; overflow: hidden; margin: 60px 0; }
+        .cta-section::before { content: ''; position: absolute; top: -60%; right: -15%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(217,108,44,0.2), transparent 70%); border-radius: 50%; }
+        .cta-section h2 { color: var(--white); font-size: 2.3rem; margin-bottom: 12px; }
+        .cta-section p { opacity: 0.85; margin-bottom: 28px; font-size: 1.1rem; }
+        .cta-form { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; max-width: 550px; margin: 0 auto; }
+        .cta-form input, .cta-form select { padding: 14px 20px; border-radius: 50px; border: none; font-size: 1rem; flex: 1; min-width: 180px; }
+        .cta-form button { background: var(--primary); color: var(--white); padding: 14px 30px; border-radius: 50px; border: none; font-weight: 600; cursor: pointer; transition: all 0.3s; }
+        .cta-form button:hover { background: #c45a1a; transform: scale(1.03); }
+        .urgency { margin-top: 18px; font-size: 0.85rem; opacity: 0.75; }
+        .urgency strong { color: var(--accent); }
+
+        /* Footer */
+        footer { background: var(--secondary); color: rgba(255,255,255,0.85); padding: 70px 0 30px; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-logo { font-size: 1.4rem; font-weight: 800; color: var(--primary); margin-bottom: 12px; }
+        .footer-logo span { color: var(--white); }
+        footer h4 { color: var(--white); margin-bottom: 18px; }
+        footer ul { list-style: none; }
+        footer li { margin-bottom: 10px; opacity: 0.8; font-size: 0.9rem; }
+        footer a:hover { color: var(--primary); }
+        .social-links { display: flex; gap: 10px; margin-top: 18px; }
+        .social-link { width: 38px; height: 38px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s; font-size: 1rem; }
+        .social-link:hover { background: var(--primary); transform: translateY(-3px); }
+        .copyright { text-align: center; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.8rem; opacity: 0.6; }
+
+        /* Floating CTAs */
+        .floating-cta { position: fixed; bottom: 90px; right: 22px; z-index: 1000; display: flex; flex-direction: column; gap: 10px; }
+        .float-btn { width: 54px; height: 54px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; box-shadow: 0 6px 20px rgba(0,0,0,0.2); cursor: pointer; transition: all 0.3s; }
+        .float-btn:hover { transform: scale(1.1); }
+        .float-whatsapp { background: #25D366; color: var(--white); }
+        .float-phone { background: var(--success); color: var(--white); }
+
+        /* Sticky Mobile CTA */
+        .sticky-mobile { position: fixed; bottom: 0; left: 0; width: 100%; background: var(--white); padding: 12px 15px; display: none; gap: 10px; box-shadow: 0 -4px 20px rgba(0,0,0,0.1); z-index: 999; }
+        .sticky-mobile a { flex: 1; text-align: center; padding: 12px; border-radius: 10px; font-weight: 600; font-size: 0.9rem; }
+        .sticky-mobile .call-btn { background: var(--secondary); color: var(--white); }
+        .sticky-mobile .trial-btn { background: var(--primary); color: var(--white); }
+
+        @media (max-width: 900px) {
+            .hero-grid, .mentor-grid, .bento-grid, .testimonial-grid, .footer-grid, .lang-grid { grid-template-columns: 1fr; }
+            .hero { text-align: center; }
+            .hero-img-container { margin-bottom: 30px; }
+            .hero-img { height: 320px; }
+            .hero h1 { font-size: 2.3rem; }
+            .hero-stats { justify-content: center; }
+            .hero-testimonial { position: relative; bottom: auto; left: auto; margin: 20px auto 0; }
+            .nav-pills { overflow-x: auto; }
+            .nav-wrapper { flex-direction: column; }
+            .lang-hero { grid-template-columns: 1fr; text-align: center; }
+            .floating-cta { bottom: 80px; right: 15px; }
+            .sticky-mobile { display: flex; }
+            .trust-items { gap: 20px; font-size: 0.8rem; }
+            .cta-header { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="announcement">
+        🎨 <strong>Enrollment Open</strong> — Limited spots available! 
+        <a href="#contact" style="color: var(--accent); text-decoration: underline; margin-left: 5px;">Reserve yours →</a>
+    </div>
+
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">
+                 <img src="logo.png" height="80" alt="Colour Palette Logo" style="height: 130px; width: auto;">
+            </div>
+            <nav class="nav-pills">
+                <button class="nav-btn active" onclick="switchTab('art')">Art School</button>
+                <button class="nav-btn" onclick="switchTab('lang')">Language School</button>
+                <button class="nav-btn" onclick="switchTab('mentor')">Meet Forum</button>
+            </nav>
+            <a href="#contact" class="cta-header">🎯 Enroll Now</a>
+        </div>
+    </header>
+
+    <main>
+        <div id="art" class="fade-in">
+            <section class="hero container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="hero-badge">⭐ #1 Rated in Frisco · Since 2005</div>
+                        <h1>Where Creativity Meets <i>Culture & Credits</i></h1>
+                        <div class="hero-intro">
+                            Colour Palette – Art & Language Institute provides structured, level-based Art and World Language programs aligned with U.S. school standards.
+                        </div>
+                        <p style="font-size: 1.1rem; color: #555; margin-bottom: 20px;">
+                            Expert-led Art & Language Programs for children and teens—building creativity, confidence, and academic success.
+                        </p>
+                        
+                        <div class="hero-stats">
+                            <div><span class="stat-num">15k+</span><span class="stat-label">Students</span></div>
+                            <div><span class="stat-num">20+</span><span class="stat-label">Years</span></div>
+                            <div><span class="stat-num">ISD</span><span class="stat-label">Credits</span></div>
+                        </div>
+
+                        <div>
+                            <a href="#contact" class="btn-primary">Enroll Now</a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-img-container">
+                        <div class="hero-deco"></div>
+                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=800&q=80" alt="Kids Art Class Frisco TX" class="hero-img">
+                        <div class="hero-testimonial">
+                            <span class="stars">★★★★★</span>
+                            <p>"My daughter earned her HS Fine Arts credit thanks to the portfolio Forum helped her build."</p>
+                            <strong>— Anita P., Parent</strong>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="trust-bar">
+                <div class="trust-items">
+                    <div class="trust-item"><span>✓</span> Small batches & personalized attention</div>
+                    <div class="trust-item"><span>✓</span> Experienced instructor (20+ yrs)</div>
+                    <div class="trust-item"><span>✓</span> In-person, online & hybrid options</div>
+                    <div class="trust-item"><span>✓</span> Structured curriculum</div>
+                </div>
+            </div>
+
+            <section class="section container">
+                <div class="section-header">
+                    <h2>Art Courses</h2>
+                    <p>Structured levels. Real mediums. Professional techniques.</p>
+                </div>
+
+                <div class="bento-grid">
+                    <div class="card">
+                        <div class="card-icon">🎨</div>
+                        <h3>Kids Art Foundation</h3>
+                        <div class="hero-badge" style="margin-bottom: 10px; background: #fff7ed; color: var(--primary);">Ages 5–7</div>
+                        <p>A fun, creative introduction to drawing, coloring, and basic painting techniques. Focus on imagination, motor skills, and confidence through guided art activities.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">🖌️</div>
+                        <h3>Drawing & Painting</h3>
+                        <div class="hero-badge" style="margin-bottom: 10px; background: #fff7ed; color: var(--primary);">Ages 8–12</div>
+                        <p>Structured learning in pencil drawing, watercolor, acrylics, and mixed media. Build strong fundamentals, creativity, and artistic expression.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">🎓</div>
+                        <h3>Advanced Art & Portfolio</h3>
+                        <span class="card-badge">HS Credits</span>
+                        <div class="hero-badge" style="margin-bottom: 10px; background: #fff7ed; color: var(--primary);">Ages 13+</div>
+                        <p>Skill-based training in advanced drawing, painting, and fusion art. Includes portfolio preparation for High School Fine Arts credits accepted by ISDs.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">🪔</div>
+                        <h3>Indian Creative & Fusion Art</h3>
+                        <p>Explore Indian art styles combined with modern techniques. Perfect for cultural expression, festivals, and creative exploration.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonials-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>What Frisco Parents Say</h2>
+                        <p>Real stories from families in your community</p>
+                    </div>
+                    
+                    <div class="testimonial-grid">
+                        <div class="testimonial">
+                            <p class="testimonial-text">"Forum ma'am has a gift. My shy 7-year-old now proudly shows his artwork to everyone. The confidence boost is incredible!"</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">SM</div>
+                                <div class="author-info"><strong>Sneha M.</strong><span>Parent of 2 students</span></div>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <p class="testimonial-text">"We tried 3 other art schools before finding Colour Palette. The structured curriculum and personal attention is unmatched."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">RK</div>
+                                <div class="author-info"><strong>Rajesh K.</strong><span>Frisco, TX</span></div>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <p class="testimonial-text">"My daughter earned her HS Fine Arts credit thanks to the portfolio Forum helped her build. Highly recommend!"</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">AP</div>
+                                <div class="author-info"><strong>Anita P.</strong><span>Parent since 2021</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="lang" class="hidden">
+            <section class="section container">
+                <div class="lang-hero">
+                    <div>
+                        <span class="lang-tag">World Language Credits</span>
+                        <h1 style="margin-top: 15px; color: var(--lang-theme); font-size: 2.5rem;">Language Programs</h1>
+                        <p style="font-size: 1.1rem; color: #555; margin-top: 15px;">
+                            Structured level-based learning focused on Reading, Writing, Listening & Speaking. We help students prepare for High School World Language credits in the USA.
+                        </p>
+                        <a href="#contact" class="btn-primary" style="margin-top: 20px; background: var(--lang-theme);">Enroll Now →</a>
+                    </div>
+                    <div style="font-size: 5rem; opacity: 0.8; text-align: right;">🕉️</div>
+                </div>
+
+                <div class="section-header">
+                    <h2>Our Language Courses</h2>
+                    <p>Connecting kids to their roots while boosting academic success.</p>
+                </div>
+
+                <div class="lang-grid">
+                    <div class="card" style="border-left: 5px solid var(--lang-theme);">
+                        <h3>🇮🇳 Hindi Language</h3>
+                        <p>Systematic level-based learning focused on Reading, Writing, Listening & Speaking. Helps students prepare for High School World Language credits in the USA.</p>
+                    </div>
+                    <div class="card" style="border-left: 5px solid var(--lang-theme);">
+                        <h3>📜 Sanskrit Language</h3>
+                        <p>Introduction to classical Sanskrit with simple grammar, vocabulary, and shlokas. Builds linguistic foundation, cultural understanding, and logical thinking.</p>
+                    </div>
+                    <div class="card" style="border-left: 5px solid var(--lang-theme);">
+                        <h3>🗣️ Gujarati Language</h3>
+                        <p>Beginner to intermediate Gujarati language learning. Emphasis on everyday communication, reading, and writing skills.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="mentor" class="hidden">
+            <section class="section container">
+                <div class="mentor-grid">
+                    <img src="forum.jpg" alt="Forum Joshi - Art Teacher Frisco" class="mentor-img">
+                    <div>
+                        <p style="color: var(--primary); text-transform: uppercase; letter-spacing: 2px; font-weight: 600; font-size: 0.85rem;">Founder & Lead Instructor</p>
+                        <h2 style="font-size: 2.8rem; margin: 8px 0 20px;">Forum Joshi</h2>
+                        
+                        <blockquote style="font-size: 1.15rem; font-style: italic; color: #555; border-left: 4px solid var(--primary); padding-left: 20px; margin-bottom: 22px;">
+                            "Every child has a masterpiece inside them; they just need the right tools and patience to let it out."
+                        </blockquote>
+                        
+                        <p style="margin-bottom: 15px;">With over <strong>20 years of dedicated teaching</strong> and <strong>15,000+ students</strong> transformed, Forum brings a rare combination of professional expertise and motherly warmth to every class.</p>
+                        
+                        <p style="color: #666;">Her philosophy: <strong>Confidence first, skills follow.</strong> Whether it's watercolor landscapes or Sanskrit grammar, she personally guides each student through their unique journey.</p>
+                        
+                        <div class="mentor-stats">
+                            <div class="mentor-stat"><strong>20+</strong><span style="font-size: 0.8rem;">Years</span></div>
+                            <div class="mentor-stat"><strong>15k+</strong><span style="font-size: 0.8rem;">Students</span></div>
+                            <div class="mentor-stat"><strong>100+</strong><span style="font-size: 0.8rem;">Winners</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="section container">
+            <div class="section-header">
+                <h2>Visit Our Studio</h2>
+                <p>Conveniently located in the heart of Frisco, TX</p>
+            </div>
+            <div class="map-wrapper">
+                <iframe class="map-frame-styled" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3340.5!2d-96.6955!3d33.1484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c175418292243%3A0xf290632b947b41d7!2sColour%20palette%20art%20school!5e0!3m2!1sen!2sus" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <section class="section container">
+            <div class="section-header">
+                <h2>Common Questions</h2>
+                <p>Everything Frisco parents want to know</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item" onclick="this.classList.toggle('open')">
+                    <div class="faq-q">What ages do you teach? <span class="faq-icon">+</span></div>
+                    <div class="faq-a"><p>We specialize in children ages 5-15 for art. Language classes are available for ages 6+, including adults interested in Hindi, Sanskrit, or Gujarati.</p></div>
+                </div>
+                <div class="faq-item" onclick="this.classList.toggle('open')">
+                    <div class="faq-q">What is the class format? <span class="faq-icon">+</span></div>
+                    <div class="faq-a"><p>We offer In-person, online, and hybrid learning options to fit every family’s schedule. Classes are small batches to ensure personalized attention.</p></div>
+                </div>
+                <div class="faq-item" onclick="this.classList.toggle('open')">
+                    <div class="faq-q">How do ISD credits work? <span class="faq-icon">+</span></div>
+                    <div class="faq-a"><p>We prepare students for Credit-By-Exam (CBE) tests. Passing allows students to earn World Language or Fine Arts credits for high school—a huge advantage for college applications.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <center>
+            <section id="contact" class="cta-section container">
+            <h2>Start Your Child's Creative Journey</h2>
+            <p>See the transformation yourself.</p>
+            
+            <form class="cta-form" id="inquiryForm">
+                <select id="interest">
+                    <option value="Art">Interested in Art</option>
+                    <option value="Hindi/Sanskrit">Interested in Hindi/Sanskrit/Gujarati</option>
+                    <option value="Both Programs">Both Programs</option>
+                </select>
+                <button type="submit">Book your seat via WhatsApp →</button>
+            </form>
+            
+            <p class="urgency">⏰ <strong>Limited availability:</strong> Spots filling fast!</p>
+        </section>
+    </center>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <div class="footer-logo">Colour Palette <span>Academy</span></div>
+                <p style="opacity: 0.75; margin-bottom: 15px; font-size: 0.9rem;">Nurturing creativity & culture in the Frisco community since 2005.</p>
+                <p>📞 <a href="tel:+14699552323">+1 (469) 955-2323</a></p>
+                <p>📍 Frisco, TX</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">📘</a>
+                    <a href="#" class="social-link">📸</a>
+                    <a href="#" class="social-link">▶️</a>
+                </div>
+            </div>
+            
+            <div>
+                <h4>Programs</h4>
+                <ul>
+                    <li><a href="#">Art Classes (Ages 5-15)</a></li>
+                    <li><a href="#">Hindi Language</a></li>
+                    <li><a href="#">Sanskrit Classes</a></li>
+                    <li><a href="#">Gujarati Classes</a></li>
+                    <li><a href="#">HS Credit Prep</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">© 2025 Colour Palette Art & Language Institute, Frisco TX. All rights reserved.</div>
+    </footer>
+
+    <div class="floating-cta">
+        <a href="https://chat.whatsapp.com/LbWBFalbo832ZNG9RpqsY7" target="_blank" class="float-btn float-whatsapp" title="Join WhatsApp Group">💬</a>
+        <a href="tel:+14699552323" class="float-btn float-phone" title="Call Now">📞</a>
+    </div>
+
+    <div class="sticky-mobile">
+        <a href="tel:+14699552323" class="call-btn">📞 Call Us</a>
+        <a href="https://chat.whatsapp.com/LbWBFalbo832ZNG9RpqsY7" target="_blank" class="trial-btn">💬 WhatsApp</a>
+    </div>
+
+    <script>
+        function switchTab(id) {
+            ['art', 'lang', 'mentor'].forEach(t => {
+                document.getElementById(t).classList.add('hidden');
+                document.getElementById(t).classList.remove('fade-in');
+            });
+            document.getElementById(id).classList.remove('hidden');
+            document.getElementById(id).classList.add('fade-in');
+            document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+            event.target.classList.add('active');
+            window.scrollTo({ top: 150, behavior: 'smooth' });
+        }
+
+        // Form submission to WhatsApp
+        document.getElementById('inquiryForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('parentName').value;
+            const phone = document.getElementById('phoneNum').value;
+            const interest = document.getElementById('interest').value;
+            
+            const message = `🎨 *New Class Inquiry*
+
+👤 *Parent Name:* ${name}
+📞 *Phone:* ${phone}
+🎯 *Interested In:* ${interest}
+`;
+
+            // Copy message to clipboard
+            navigator.clipboard.writeText(message).then(() => {
+                alert('✅ Your inquiry has been copied!\n\nYou will now be redirected to our WhatsApp group. Please paste your message there to complete your inquiry.');
+                window.open('https://chat.whatsapp.com/LbWBFalbo832ZNG9RpqsY7', '_blank');
+            }).catch(() => {
+                // Fallback if clipboard fails
+                alert('Please join our WhatsApp group and share:\n\n' + message);
+                window.open('https://chat.whatsapp.com/LbWBFalbo832ZNG9RpqsY7', '_blank');
+            });
+            
+            // Reset form
+            this.reset();
+        });
+    </script>
+</body>
+</html>
